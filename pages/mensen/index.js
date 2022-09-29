@@ -23,12 +23,13 @@ const Mensen = ({mensen}) => {
         <div>
             <h1>Alle Mensen</h1>
             <p>Alle Mensen</p>
-            {mensen.map(mensa => ( 
+            {mensen.slice(0,25).map(mensa => ( 
                 <Link href ={'/mensen/' + mensa.id}key={mensa.id}>
                     <a className={styles.single}> 
                         <h2>{mensa.name}</h2>
                         <h4>{mensa.address}</h4>
                         <h4>{mensa.city}</h4>
+                        <h4>{mensa.id}</h4>
                     </a>
                 </Link>))}
         </div>

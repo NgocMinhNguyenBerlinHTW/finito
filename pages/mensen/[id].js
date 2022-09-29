@@ -2,9 +2,10 @@ export const getStaticPaths = async () => {
   const res = await fetch('https://openmensa.org/api/v2/canteens');
   const data = await res.json();
 
-  const paths = data.map(mensa => {
+  const paths = data.slice(0,25).map(mensa => {
     return {
-      params: { id: mensa.id.toString() }
+      params: { id: mensa.id.toString()
+    }
     }
   })
 
