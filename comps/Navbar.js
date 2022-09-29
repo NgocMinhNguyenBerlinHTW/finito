@@ -6,7 +6,7 @@ const Navbar = () => {
     return ( 
         <nav >
             <div className="logo">
-                <Image src="/logoHTW.jpeg" width={128} height={77} />
+                <Image src="/htw-logo.svg" width={128} height={77} />
             </div>
 
         <Link href='/'><a>Home</a></Link>
