@@ -1,7 +1,7 @@
-import Navbar from "../../comps/Navbar";
 import Head from 'next/head'
 import styles from '../../styles/Mensen.module.css'
 import Link from "next/link";
+
 export const getStaticProps = async () => {
     const res = await fetch('https://openmensa.org/api/v2/canteens');
     const data = await res.json();
@@ -26,7 +26,7 @@ const Mensen = ({mensen}) => {
             {mensen.map(mensa => ( 
                 <Link href ={'/mensen/' + mensa.id}key={mensa.id}>
                     <a className={styles.single}> 
-                        <h2>{ mensa.name }</h2>
+                        <h2>{mensa.name}</h2>
                         <h4>{mensa.address}</h4>
                         <h4>{mensa.city}</h4>
                     </a>
