@@ -5,7 +5,7 @@
     "scope": "/",
     "start_url": "/",
     "name": "Mensa Group 3",
-    "short_name": "Mensa",
+    "short_name": "meineMensa",
     "icons": [
         {
             "src": "/icon-192x192.png",
@@ -26,6 +26,12 @@
             "src": "/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "/maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose":"maskable"
         }
     ]
 }
